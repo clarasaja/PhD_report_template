@@ -1,0 +1,33 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.blg
+*.bbl
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.xdv
+*.bak
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PDF: NON ignorato, viene caricato su GitHub
+# *.pdf

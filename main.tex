@@ -1,0 +1,201 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{lipsum} 
+
+% Font Helvetica di sistema con varianti regular e bold
+\usepackage{fontspec}
+\setsansfont{Helvetica}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Configurazione precedente Helvetica-like (può causare problemi con Tectonic/XeLaTeX):
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+% Spaziature e margini
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.35}
+
+% Tipi di colonna per tabularx
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+% ==========================================================
+% FRONTESPIZIO (PAGINA 1 DEDICATA)
+% ==========================================================
+\begin{titlepage}
+    \vspace*{-0.5cm}
+    \noindent
+    \begin{minipage}[c]{0.48\textwidth}
+        \includegraphics[height=1.5cm]{Monogramma_DFA_black_.png}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[c]{0.48\textwidth}
+        \raggedleft
+        \includegraphics[height=3.2cm]{Logo_UniCT.png}
+    \end{minipage}
+
+    \begin{center}
+        {\fontsize{14}{18}\selectfont \textbf{PH.D. PROGRAMME IN PHYSICS}} \\[0.8em]
+        {\fontsize{12}{16}\selectfont \textbf{CYCLE XLI}} \\[1em]
+
+        % Linea separatrice
+        \rule{\textwidth}{0.4pt} \\[3.5cm]
+
+        {\fontsize{18}{22}\selectfont \textbf{REPORT ON FIRST-YEAR ACTIVITIES}} \\[3.5cm]
+
+        {\fontsize{14}{18}\selectfont \textbf{MARIO ROSSI}}
+    \end{center}
+
+    % Spinge l'anno accademico in fondo alla pagina
+    \vfill
+
+    \begin{center}
+        {\fontsize{12}{16}\selectfont \textbf{2025-2026}}
+    \end{center}
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+
+% ==========================================================
+% CONTENUTO RELAZIONE (PAGINA 2)
+% ==========================================================
+\textbf{DEVELOPMENTS IN THE RESEARCH}
+
+\lipsum[10]
+\begin{itemize}
+    \item Lorem ipsum [...]
+    \item Lorem ipsum [...]
+\end{itemize}
+
+\vspace{1.8em}
+
+% --- DIDACTIC ACTIVITIES ---
+\textbf{DIDACTIC ACTIVITIES} 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|L|c|c|c|c|}
+\hline
+\textbf{PhD course} & \textbf{CFU} & \textbf{Attended} & \textbf{Exam Date} & \textbf{Vote} \\
+\hline
+Cluster in Atomic Nuclei & 2 & X & 12/02/2025 & 30/30 \\
+\hline
+  &  &  & & \\
+\hline
+ &  & & & \\
+\hline
+ &  & & & \\
+\hline
+ &  &  & \multicolumn{2}{c|}{No exam required} \\
+\hline
+ &  &  &  \multicolumn{2}{c|}{No exam required} \\
+\hline
+\end{tabularx}
+\end{table}
+
+\vspace{1.8em}
+
+% --- PARTICIPATION TO SEMINARS ---
+\textbf{PARTICIPATION TO SEMINARS} 
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{|L|c|L|}
+\hline
+\textbf{PhD seminars} & \textbf{Attended} & \textbf{Note} \\
+\hline
+Highlights in Frontier Physics & 7/9 & I attended one of these seminars as chair \\
+\hline
+Science Colloquia &  & \\
+\hline
+Young Physicists to Young Physicists (YP2) Seminars & 2/7 & \\
+\hline
+\end{tabularx}
+\end{table}
+
+\vspace{1.8em}
+
+% --- PERIOD ABROAD ---
+\textbf{PERIOD ABROAD} 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|L|L|c|c|}
+\hline
+\textbf{Location} & \textbf{Motivation} & \textbf{Date} & \textbf{Days} \\
+\hline
+Piaski, Poland & Participation at the Conference ‘Mazurian Lakes Conference on Physics 2025’. 
+    & 31/08/2025 – 06/09/2025 & 7 \\
+\hline
+ &   &  &  \\
+\hline
+ &   &  &  \\
+\hline
+ &   &  &  \\
+\hline
+\multicolumn{3}{|r|}{\textbf{Total}} & \textbf{7/180} \\
+\hline
+\end{tabularx}
+\end{table}
+
+\vspace{1.8em}
+
+% --- PERIOD IN COMPANIES/INDUSTRIES ---
+\textbf{PERIOD IN COMPANIES/INDUSTRIES (IF ANY)}
+
+
+\vspace{1.8em}
+
+
+% --- PARTICIPATION TO CONFERENCES/WORKSHOPS/SCHOOLS ---
+\textbf{PARTICIPATION TO CONFERENCES/WORKSHOPS/ SCHOOLS} 
+\begin{itemize}
+    \item Mazurian Lakes Conference on Physics 2025, Piaski (PL), 31/08/2025 – 06/09/2025;
+    \item [...]
+\end{itemize}
+
+\vspace{1.8em}
+
+% --- OTHER ACTIVITIES ---
+\textbf{OTHER ACTIVITIES (tutoring, dissemination, \dots)} 
+
+
+\vspace{1.8em}
+
+% --- PUBLICATIONS ---
+\textbf{PUBLICATIONS*} 
+
+
+
+\begin{itemize}
+    \item Proceeding of the ‘Mazurian Lakes Conference on Physics 2025’ published in Acta Physica Polonica B, Proceedings Series (DOI….. HANDLE….);
+    \item [...]
+\end{itemize}
+
+
+\small{* The research findings have been entered into IRIS as required by the PhD programme.}
+
+\vspace{2.5cm}
+
+% --- SIGNATURES ---
+\begin{noindent}
+Catania, 05/10/2026 \hfill Signature of the Ph.D. student \rule{6cm}{0.4pt}
+\end{noindent}
+
+\vspace{4em}
+
+Here, as Tutor of Dr. XX YY I give my positive feedback for their admission to the second year of the PhD program.
+
+\vspace{4em}
+Tutor(s) signature(s) \rule{6cm}{0.4pt}
+
+\vspace{4em}
+Signature of the Curriculum Referent: Dr. M. Verdi \rule{4cm}{0.4pt}
+
+\end{document}
