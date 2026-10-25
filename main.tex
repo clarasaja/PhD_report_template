@@ -7,28 +7,28 @@
 \usepackage{float}
 \usepackage{lipsum} 
 
-% Font Helvetica di sistema con varianti regular e bold
+% System Helvetica font with regular and bold variants
 \usepackage{fontspec}
 \setsansfont{Helvetica}
 \renewcommand{\familydefault}{\sfdefault}
 
-% Configurazione precedente Helvetica-like (può causare problemi con Tectonic/XeLaTeX):
+% Previous Helvetica-like configuration (may cause issues with Tectonic/XeLaTeX):
 % \usepackage{helvet}
 % \renewcommand{\familydefault}{\sfdefault}
 
-% Spaziature e margini
+% Spacing and margins
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \renewcommand{\arraystretch}{1.35}
 
-% Tipi di colonna per tabularx
+% Column types for tabularx
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \begin{document}
 
 % ==========================================================
-% FRONTESPIZIO (PAGINA 1 DEDICATA)
+% TITLE PAGE (DEDICATED PAGE 1)
 % ==========================================================
 \begin{titlepage}
     \vspace*{-0.5cm}
@@ -46,7 +46,7 @@
         {\fontsize{14}{18}\selectfont \textbf{PH.D. PROGRAMME IN PHYSICS}} \\[0.8em]
         {\fontsize{12}{16}\selectfont \textbf{CYCLE XLI}} \\[1em]
 
-        % Linea separatrice
+        % Separator line
         \rule{\textwidth}{0.4pt} \\[3.5cm]
 
         {\fontsize{18}{22}\selectfont \textbf{REPORT ON FIRST-YEAR ACTIVITIES}} \\[3.5cm]
@@ -54,7 +54,7 @@
         {\fontsize{14}{18}\selectfont \textbf{MARIO ROSSI}}
     \end{center}
 
-    % Spinge l'anno accademico in fondo alla pagina
+    % Push the academic year to the bottom of the page
     \vfill
 
     \begin{center}
@@ -66,7 +66,7 @@
 \pagenumbering{arabic}
 
 % ==========================================================
-% CONTENUTO RELAZIONE (PAGINA 2)
+% REPORT CONTENT (PAGE 2)
 % ==========================================================
 \textbf{DEVELOPMENTS IN THE RESEARCH}
 
